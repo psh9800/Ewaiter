@@ -4,17 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ewaiter.MainActivity">
+    tools:context="com.example.ewaiter.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
 
     <Button
-        android:id="@+id/TableButton"
+        android:id="@+id/Table1"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_width="92dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="48dp"
         android:background="@color/colorAccent"
-        android:onClick="perform_action"
-        android:text="Closed"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="247dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Table2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/Table2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="92dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="583dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
 </android.support.constraint.ConstraintLayout>
